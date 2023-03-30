@@ -3,6 +3,7 @@ function countAandB(input) {
 
   let counter = 0; //JavaScript isn't strongly-typed, declaring initial value is necessary.
   for (let i = 0; i < input.length; i++) {
+    //check if letter is "a" or "b"
     if (input[i] === "a" || input[i] === "b") {
       counter++;
     }
@@ -18,8 +19,8 @@ function toNumber(input) {
 
   let numbers = [];
   for (let i = 0; i < input.length; i++) {
-    let tempCode = input[i].charCodeAt(0);
-    let numberConverted = String.fromCharCode(tempCode - 48);
+    let tempCode = input[i].charCodeAt(0); //covert letter to ASC
+    let numberConverted = String.fromCharCode(tempCode - 48); //caculate the corresponding ASC of the number, and then convert it
     numbers.push(numberConverted);
   }
   return numbers;
