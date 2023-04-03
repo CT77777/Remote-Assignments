@@ -20,7 +20,7 @@ function toNumber(input) {
   let numbers = [];
   for (let i = 0; i < input.length; i++) {
     let tempCode = input[i].charCodeAt(0); //covert letter to ASC
-    let numberConverted = String.fromCharCode(tempCode - 48); //caculate the corresponding ASC of the number, and then convert it
+    let numberConverted = parseInt(String.fromCharCode(tempCode - 48)); //caculate the corresponding ASC of the number, and then convert it
     numbers.push(numberConverted);
   }
   return numbers;
