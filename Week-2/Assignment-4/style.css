@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+/* navigator style */
+.header-title {
+  width: 150px;
+  font-size: 2em;
+  margin-left: 15px;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.header-nav {
+  width: 60%;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-items a:link {
+  font-size: 130%;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-items a:visited {
+  color: rgb(181, 178, 178);
+}
+
+.nav-items a:hover {
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* banner style */
+.banner {
+  background-color: blanchedalmond;
+  text-align: center;
+  min-height: 250px;
+  font-family: fantasy;
+  font-size: 2em;
+}
+
+/* main content style */
+.main {
+  text-align: center;
+}
+.main-title {
+  text-align: center;
+}
+
+.main-section {
+  margin: 0px 25px;
+}
+
+.main-sections {
+  background-color: rgb(197, 184, 167);
+  margin: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+.main-sections h2 {
+  font-size: 3vw;
+}
+
+.main-sections img {
+  width: 25vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.main-sections p {
+  font-size: 2vw;
+}
+
+.main-button {
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.main-button:active {
+  box-shadow: 7px 7px 5px rosybrown;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+}
+
+/* flexbox layout when viewport width below 750px */
+@media screen and (max-width: 650px) {
+  .header-title {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .header-logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    width: 100%;
+  }
+
+  .nav-items a:link {
+    font-size: 120%;
+  }
+
+  .main-sections h2 {
+    font-size: 150%;
+  }
+
+  .main-sections img {
+    width: 50vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+
+  .main-sections p {
+    font-size: 120%;
+  }
+}
