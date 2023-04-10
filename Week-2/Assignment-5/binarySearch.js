@@ -20,10 +20,13 @@ function binarySearchPosition(numbers, target) {
 
   if (target === numbers[leftIndex]) {
     return leftIndex;
-  } else {
+  } else if (target === numbers[rightIndex]) {
     return rightIndex;
+  } else {
+    return -1; // the target doesn't exist in the array, should return -1;
   }
 }
 
 console.log(binarySearchPosition([1, 2, 5, 6, 7], 1)); // should print 0
 console.log(binarySearchPosition([1, 2, 5, 6, 7], 6)); // should print 3
+console.log(binarySearchPosition([1, 2, 5, 6, 7], 8)); // should print -1
