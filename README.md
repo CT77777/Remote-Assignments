@@ -21,3 +21,9 @@
 - [Assignment-5](https://github.com/CT77777/remote-assignments/blob/main/Week-2/Assignment-5/binarySearch.js)
 
 - [Assignment-6](https://ct77777.github.io/remote-assignments/Week-2/Assignment-6/)
+
+## <u>Week-3</u>
+
+- [Assignments](https://github.com/CT77777/remote-assignments/tree/main/Week-3/Assignments)
+
+- [Assignment-5](https://github.com/CT77777/remote-assignments/tree/main/Week-3/Assignment-5)
