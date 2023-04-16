@@ -1,0 +1,29 @@
+h1 {
+  font-family: fantasy;
+  font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  font-size: 30px;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+}
+
+input {
+  height: 24px;
+}

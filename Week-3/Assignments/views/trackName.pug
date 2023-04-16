@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content 
+    section 
+        h1 Track Name
+        form
+            label Please enter your username
+            br
+            input(type="text" placeholder="enter your name")  
+            button(type="submit") Submit
+    script(src="/js/ajaxTrackName.js")
