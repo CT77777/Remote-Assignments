@@ -1,3 +1,4 @@
+// O(n^2)
 function twoSum(nums, target) {
   // your code here
   for (let i = 0; i < nums.length; i++) {
@@ -7,6 +8,18 @@ function twoSum(nums, target) {
         return [i, j + 1];
       }
     }
+  }
+}
+
+// O(n)
+function twoSum_n(nums, target) {
+  let numObj = {};
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+    if (numObj[complement] !== undefined) {
+      return [numObj[complement], i];
+    }
+    numObj[nums[i]] = i;
   }
 }
 

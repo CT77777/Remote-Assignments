@@ -23,7 +23,7 @@ app.get("/data", (req, res) => {
     const result = "Lack of Parameter";
     res.send(result);
     // res.render("data", { result: result });
-  } else if (+number !== parseInt(number)) {
+  } else if (+number !== parseInt(number) || +number <= 0) {
     const result = "Wrong Parameter";
     res.send(result);
     // res.render("data", { result: result });
@@ -37,26 +37,19 @@ app.get("/data", (req, res) => {
   }
 });
 
-// page for submitting name
-app.get("/trackName", (req, res) => {
-  const name = req.query.name;
-  if (name === undefined) {
-    res.render("trackName");
-  } else {
-    res.cookie("username", name);
-    res.send({ redirectTo: "/myName" });
-    // res.redirect("/myName");
-  }
+// inputting name router
+app.get("/myName", (req, res) => {
+  const username = req.cookies.username;
+
+  res.render("myName", { username: username });
 });
 
-// check if user already submitted name
-app.get("/myName", (req, res) => {
-  if (req.cookies.username !== undefined) {
-    const username = req.cookies.username;
-    res.render("myName", { username: username });
-  } else {
-    res.redirect("/trackName");
-  }
+// setting cookies router
+app.post("/trackName", (req, res) => {
+  const name = req.query.name;
+
+  res.cookie("username", name);
+  res.send({ redirectTo: "/myName" });
 });
 
 app.listen(3000, () => {
