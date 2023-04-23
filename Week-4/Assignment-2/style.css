@@ -1,0 +1,25 @@
+h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  font-size: 30px;
+}
+
+ul {
+  margin: 50px;
+  list-style-type: none;
+}
+
+hr {
+  height: 3px;
+  background-color: black;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home Page
+        link(rel="stylesheet" href="css/style.css")
+    body 
+        header
+            h1 Home Page
+        main 
+            if message
+              div(class="message")
+                h2(class="message_content") #{message}
+
+            div(class="form_up")
+              h2 Sign Up
+              form(action="/signUp", method="POST")
+                  label(class="form_item_up form_input_up") Email:
+                    input(type="text", name="email")
+
+                  label(class="form_item_up form_input_up") Password:
+                    input(type="password", name="password")
+
+                  label(class="form_item_up form_input_up") Username:
+                      input(type="text", placeholder="optional", name="username")
+
+                  button(class="form_item_up form_button_up" type="submit") Submit
+
+            div(class="form_in")
+              h2 Sign in
+              form(action="/signIn", method="POST")
+                  label(class="form_item_in form_input_in") Email:
+                    input(type="text", name="email")
+
+                  label(class="form_item_in form_input_in") Password:
+                    input(type="password", name="password")
+
+                  button(class="form_item_in form_button_in" type="submit") Submit
+        footer 
+            p &copy 2023 CT

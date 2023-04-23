@@ -1,0 +1,72 @@
+/* body {
+  text-align: center;
+} */
+
+h1 {
+  font-size: 50px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.message_content {
+  font-size: 30px;
+  border: solid 5px tomato;
+  border-radius: 15px;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form_up {
+  border: 5px solid black;
+  margin: 20px 10px;
+}
+
+.form_in {
+  border: 5px solid black;
+  margin: 20px 10px;
+}
+
+.form_input_up {
+  flex: 1 33%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.form_button_up {
+  width: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form_input_in {
+  flex: 1 50%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.form_button_in {
+  width: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin: 50px 0px;
+}
