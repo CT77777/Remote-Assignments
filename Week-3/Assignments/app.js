@@ -49,7 +49,7 @@ app.post("/trackName", (req, res) => {
   const name = req.query.name;
 
   res.cookie("username", name);
-  res.send({ redirectTo: "/myName" });
+  res.send({ redirectTo: "/myName" }); // send router endpoint to ajax js
 });
 
 app.listen(3000, () => {
